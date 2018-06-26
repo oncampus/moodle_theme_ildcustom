@@ -1,0 +1,402 @@
+/**
+ * Themeanpassungen ildcustom
+ */
+
+/* ----------------------------------------------------------- */
+/*           Korrekturen moodle 3.5 update                     */
+/* ----------------------------------------------------------- */ 
+
+// Bug fixes - Scrollbar in der Kursübersicht!
+.block .content {
+	padding:5px 15px; 
+}
+// Navbar Anpassung
+.nav {margin-bottom:20px;}
+.navbar .nav {margin-bottom:0px;}
+
+// Reiterhintergrund
+.nav-tabs li.active {
+	a, a:hover, a:focus {
+		border:1px solid #ddd;
+		border-bottom-color:transparent;
+		background-color:#fff;
+	}
+}
+.nav-tabs > li > a {border-radius:0px;}
+// Tabs zentrieren
+.text-center, .text-xs-center  {text-align:center;}
+
+// Button ohne runde Ecken
+.btn {border-radius:0px;}
+
+
+.container-fluid {padding-right:20px; padding-left:20px;}
+.mform .fitem_feditor .fitemtitle, .mform .fitem_ftext .fitemtitle {
+	max-width:none;
+}
+
+// Eingabefelder und Buttons
+form select, form input[type="text"], form input[type="password"], 
+form.atto_form input[type="url"], select.singleselect {
+	vertical-align:middle;
+	margin:0 0 10px 0;
+	
+}
+
+
+.breadcrumb-button {
+	.singlebutton form input[type="submit"] {
+		margin-bottom: 3px;
+	}
+	.forumsearch {
+		margin-bottom:10px;
+	}
+}
+
+// Pop-Up ohne runde Ecken
+.modal-content {border-radius:0px;}
+
+
+// Kursuebersicht korrektur
+// -------------------------------------------------------------
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+.nav-pills > li > a {border-radius:0px;}
+.card {margin-left:15px; margin-right:15px; border-radius:0px;}
+
+
+.fade.show {
+    opacity: 1;
+}
+
+
+
+// Kurse Aktivitäten Bearbeiten (Pop-Up)
+// -------------------------------------------------------------
+.jsenabled .moodle-actionmenu[data-enhanced] .menu-action-text {
+	white-space:unset;
+}
+.moodle-actionmenu[data-enhanced].show .menu a {
+	padding: 6px 1em 6px 0.7em; // padding: 6px 1em 6px 1em;
+}
+.moodle-actionmenu[data-enhanced].show .menu > li > a {
+	padding:3px 25px 3px 10px;
+}
+#changenumsections {margin-bottom:10px;}
+
+.section .moodle-actionmenu[data-enhanced] .menu img {
+	width:12px; 
+	height:12px;
+}
+
+// Navbar responsive
+// -------------------------------------------------------------
+.navbar-nav > li a.dropdown-toggle {
+	@media (max-width: 320px) {
+		padding-left:7px;
+		padding-right:7px;
+	}
+}
+.has_dock_top_horizontal #dock .dockeditem .dockedtitle h2 {
+	@media (max-width: 320px) {
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+
+// -------------------------------------------------------------
+// Loginseiten
+// -------------------------------------------------------------
+
+#page-login-index #page-content {
+	@media (min-width: @screen-sm-min) {
+		margin:60px 0px 60px -15px;
+	}
+}
+.loginpanel .form-label {
+    text-align: left;
+}
+.loginbox.twocolumns .loginpanel {
+    padding: 19px;
+	margin-bottom:20px;
+	position:relative;
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		float:left;
+		width:33%;
+	}
+	@media (min-width: @screen-md-min) { 
+		float:left;
+		width:25%;
+	}
+}
+.loginpanel {
+	form input[type="text"], form input[type="password"] {
+		min-width:175px;
+		width:98%;
+	}
+}
+.loginbox.onecolumn .loginpanel {
+	form input[type="text"], form input[type="password"] {
+		width:100%;
+	}
+}
+.loginbox.twocolumns .signuppanel {
+    padding: 19px;
+	margin-bottom:20px;
+	position:relative;
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+		float:left;
+		width:58.6%;
+		left:8.4%;
+	}
+	@media (min-width: @screen-md-min) {
+		float:left;
+		width:66.6%;
+		left:8.4%;
+	}
+}
+
+// Login ohne Text und Selbsteinschreibung
+// -------------------------------------------------------------
+#page-login-index #page-wrapper .loginbox.onecolumn .signuppanel {
+    background-color: transparent;
+	max-width:330px;
+}
+#page-login-index #page-wrapper .loginbox.onecolumn {
+	max-width:365px;
+}
+
+
+// Usermenü Anpassung - Sie sind nicht angemeldet
+// -------------------------------------------------------------
+.notloggedin .usermenu {
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+	line-height:48px;
+}
+.navbar .usermenu .Login, .navbar .usermenu .login {
+	display:inline;
+}
+#page-site-index.notloggedin .usermenu .login, #page-login-index.notloggedin .usermenu .login,
+#page-login-forgot_password.notloggedin .usermenu .login {
+	display:inline;
+	@media (max-width: @screen-sm-max) {
+		display:none;
+	}
+}
+
+
+// Gastanmeldung Usermenü
+// -------------------------------------------------------------
+#page-login-index .usermenu .login, #page-login-forgot_password .usermenu .login, 
+.navbar .usermenu .Login, .navbar .usermenu .login, 
+#page-site-index .usermenu .login {
+    line-height: 48px;
+}
+
+// Passwort vergessen Textabschnitt
+// -------------------------------------------------------------
+#page-login-forgot_password {
+	.generalbox {
+		padding: 25px 0;
+	}
+}
+
+// -------------------------------------------------------------
+// Nutzungsrichtlinien Cookiebar
+// -------------------------------------------------------------
+.eupopup-container {
+	a {color:#fff; text-decoration:underline;}
+	a:hover, a:active, a:focus {color:#56aad1; text-decoration:underline;}
+	a.eupopup-button {color:#f6a21d;}
+	a.eupopup-button:hover, a.eupopup-button:active, a.eupopup-button:focus {color:#f6a21d; text-decoration:underline;}
+}
+// -------------------------------------------------------------
+// Anpassung Kalender
+// -------------------------------------------------------------
+.d-none { display: none !important;}
+@media (min-width:@screen-sm-min) { 
+.d-md-none {display: none !important;}
+.d-md-block {display: block !important;}
+}
+
+// -------------------------------------------------------------
+// Anpassung Kursliste
+// -------------------------------------------------------------
+#page-my-index .block_myoverview{
+	// ein- und ausblenden mobil und desktop
+	.tab-content #myoverview_courses_view_in_progress,  
+	.tab-content #myoverview_timeline_dates {
+		&.tab-pane.show {display:none !important;}
+		&.tab-pane.active {display:block !important;}
+	}
+	
+	.visible-desktop {display: inherit !important;}
+	.hidden-desktop {display: none !important;}
+
+	@media (max-width:@screen-xs-max) {
+		.visible-desktop {display:  none !important;}
+		.hidden-desktop {display: inherit !important;}
+	}
+
+	// Einrueckung bei Listen aufheben
+	ul.list-group {
+		margin-left:0px;
+	}
+	
+	// Kursitem
+	.list-group-item {
+		height:auto;
+        border:0px;
+		border-radius:0px;
+		border-left:2px solid @block-border;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	} 
+	.well, .card {
+		padding:0px 15px;
+		margin-bottom:7px;
+		background-color:@brand-bg;
+		min-height:58px;
+	}
+	.course-summary-shortentext p {
+		padding-bottom:10px;
+		@media (min-width:481px) {
+			padding-left:65px;
+		}
+	}
+	@chart-size: 50px;
+	@doughnut-border-size: 11px;
+	@doughnut-dasharray: 124;
+	
+	// Kursfortschritt
+	.progress-chart-container {
+		height:(@chart-size + 2);
+		width:@chart-size;
+		margin-right:15px;
+		float:left;
+		margin-bottom:0px !important;
+		
+		.progress-doughnut .progress-indicator {
+			height:@chart-size; 
+			width:@chart-size; 
+			top:(@doughnut-border-size * -1);
+			left:(@doughnut-border-size * -1);
+			svg .circle {
+				stroke-width: @doughnut-border-size;
+                stroke: @doughnut-fill-colour;
+                fill: none;
+                stroke-dasharray: @doughnut-dasharray;
+                stroke-dashoffset: @doughnut-dasharray;
+                transform: rotate(-90deg);
+                transform-origin: center center;
+					
+				.mixin-loop (@index) when (@index > 0) {
+					&.percent-@{index} {
+						stroke-dashoffset: @doughnut-dasharray - (@index / 100 * @doughnut-dasharray);
+					}
+					.mixin-loop (@index - 1);
+				}
+				.mixin-loop (0) {}
+				.mixin-loop (100);
+				
+			}
+		}
+		
+		.no-progress {height:50px; width:50px; background-color:#ddd;}
+		.progress-doughnut {
+			width:50px; 
+			height:50px;  
+			border: 11px solid rgba(0,0,0,0.2);
+		}	
+		.progress-doughnut .progress-text {
+			color:rgba(0,0,0,0.7);
+			font-size:11px;
+			letter-spacing: -0.05em;
+		}
+		& .no-progress .icon, & .no-progress .smallicon {
+			height:25px;
+			width:25px;
+		}
+		.course-info-container-title h4 {padding-top:8px;}
+	}
+	
+	
+	.visible-desktop .progress-chart-container {margin-top:-6px;}
+	.hidden-desktop .progress-chart-container {margin-top:0px;}
+	
+	// Desktop Liste
+	.course-info-container-title .fa {font-size:20px; line-height:20px; padding-bottom:2px; color:@link-color; cursor:pointer;}
+	.course-info-container-title .rotate {
+		transform: scale(-1); // rotate(-180deg)
+		transition: .3s;
+	}
+	.course-info-container-title .rotate-reset {
+		transform: scale(); //rotate(0deg)
+		transition: .3s;
+	}
+	.visible-desktop .course-info-container-title h4.course-title {padding-top:8px;}
+	
+	// Mobile Liste
+	.hidden-desktop .media {
+		margin:5px 0px;
+		.media-heading {
+			margin:13px 0px 15px 0px;
+		}
+		.media-body {
+			@media (max-width:480px) {
+				display:block;
+				width:100%;
+			}
+		}
+	}
+	
+	// Platzhalter
+	.nocourses-placeholder {
+		margin-bottom:15px;
+		.empty-placeholder-image-lg {
+			height:75px;
+		}
+	}
+	// Titeltrennung der Listen
+	.inprogresscoursestitle, .futurecoursestitle, .pastcoursestitle {
+		font-size:14px;
+		font-weight:bold;
+	}
+}
+
+
+// -------------------------------------------------------------
+// Anpassung Berichte und Protokolle
+// -------------------------------------------------------------
+.pagelayout-report .container {
+width:98%;
+}
+
+
+// -------------------------------------------------------------
+// Anpassung Kontakt Datenschutz
+// -------------------------------------------------------------
+.modal-dialog .modal-content .container {
+	width:100%;
+	.initialism.text-danger {
+		border:0px;
+		.icon {width:8px; height:8px; margin-bottom:6px;}
+	}
+	.col-form-label .pull-xs-right.text-nowrap {float:none !important;}
+	.form-control-feedback {position:relative;}
+	.form-control-feedback[hidden] {display:none;}
+}
+
+.profile_tree .node_category {
+	dl {
+		margin-bottom:0px;
+	}
+	dd a.contactdpo {
+		margin-left:0px;
+	}
+}
