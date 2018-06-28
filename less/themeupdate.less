@@ -374,12 +374,12 @@ form.atto_form input[type="url"], select.singleselect {
 // Anpassung Berichte und Protokolle
 // -------------------------------------------------------------
 .pagelayout-report .container {
-width:98%;
+	width:98%;
 }
 
 
 // -------------------------------------------------------------
-// Anpassung Kontakt Datenschutz
+// Anpassung Kontakt Datenschutz + Profilseite
 // -------------------------------------------------------------
 .modal-dialog .modal-content .container {
 	width:100%;
@@ -399,4 +399,113 @@ width:98%;
 	dd a.contactdpo {
 		margin-left:0px;
 	}
+}
+
+#page-user-profile #region-main {
+	width:100%;
+	margin-bottom:20px;
+}
+@media (min-width:@screen-sm-min) { 
+	.userprofile .profile_tree {
+		-webkit-column-count: 2; 
+		-moz-column-count: 2; 
+		column-count: 2;
+		-webkit-column-gap: 30px;
+		-moz-column-gap: 30px;
+		column-gap: 30px;
+		.node_category {
+			background-color:#fff; width:100%;
+		}
+	}
+}
+// -------------------------------------------------------------
+// Anpassung Formulare Info-Pop-Ups
+// -------------------------------------------------------------
+.popover {
+	border-radius:2px; 
+	max-width:450px;
+	padding:0px;
+	@media (max-width: @screen-xs-max) { 
+		max-width:90%; 
+		left:5px !important;
+	}
+	ul{
+		padding-inline-start:0px; 
+		margin-left:12px;
+		list-style-position:outside;
+		li {
+			padding-left:10px;
+			margin-left:10px;
+		}
+	}
+	ol {
+		padding-inline-start:0px; 
+		margin-left:30px;
+		list-style-position:outside;
+		li {
+			padding-left:0px;
+			margin-left:0px;
+		}
+	}
+}
+
+// -------------------------------------------------------------
+// Anpassung Kursseiten (Gridkurs)
+// -------------------------------------------------------------
+.pagelayout-course #region-main-inner div[role="main"] {
+	overflow-x:inherit;
+}
+
+#page-course-view-grid {
+	#region-main-inner { 
+		padding:25px; 
+	}
+	#region-main-inner div[role="main"] {
+		background-color:#fff;
+	}
+	
+	
+	.course-content ul.gridicons li {
+		.image_holder {
+			border-radius:0px;
+			border-width:1px;
+		}
+	}
+}
+// -------------------------------------------------------------
+// Anpassung Kursseiten (Collapsible Topics)
+// -------------------------------------------------------------
+#page-course-view-collapsibletopics #region-main-inner {
+	padding:25px;
+	div[role="main"] {
+		background-color:#fff;
+		.course-content ul.collapsibletopics .content .summarytext {
+			margin-left:20px;
+		}
+		.sectionname {
+			margin-top:0px;
+			font-size:16px;
+		}
+		.course-content ul.collapsibletopics .content .section-summary-activities {
+			font-size:0.8203125rem;
+			line-height:0.83rem;
+			.activity-count {
+				line-height:0.83rem;
+			}
+		}
+		.course-content ul.collapsibletopics li.section .section-summary-activities.mdl-right {
+			line-height:0.83rem;
+			font-size:0.8203125rem;
+		}
+		ul.section {
+			padding-left:20px;
+		}
+		.course-content ul.collapsibletopics a.sectiontoggle[aria-expanded="true"],
+		.course-content ul.collapsibletopics a.sectiontoggle[aria-expanded="false"] {
+			padding-left:1.5rem;
+		}
+	}
+}
+body.editing .course-content ul.collapsibletopics a.sectiontoggle[aria-expanded="false"] {
+	text-decoration:none;
 }
