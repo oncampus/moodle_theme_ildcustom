@@ -368,7 +368,10 @@ form.atto_form input[type="url"], select.singleselect {
 		font-weight:bold;
 	}
 }
-
+// -------------------------------------------------------------
+// Anpassung Bild in Kursliste (Startseite)
+// -------------------------------------------------------------
+.coursebox .content .courseimage {border-radius:0px; margin:3px 10px 3px 5px;}
 
 // -------------------------------------------------------------
 // Anpassung Berichte und Protokolle
@@ -509,3 +512,21 @@ form.atto_form input[type="url"], select.singleselect {
 body.editing .course-content ul.collapsibletopics a.sectiontoggle[aria-expanded="false"] {
 	text-decoration:none;
 }
+
+// -------------------------------------------------------------
+// Aktivitäten ausblenden / verfügbar machen (stealth mode)
+// -------------------------------------------------------------
+.availabilityinfo.ishidden, .availabilityinfo.isstealth {
+	.label-info {
+		color: @linkcolor;
+		opacity: 0.7;
+		line-height: 0.7;
+		display: block;
+		margin-top: -7px;
+		background-color: transparent;
+		font-weight: normal;
+		padding-left:0.2em;
+	}
+}
+	
+.activity .activityinstance a.stealth, .activity .activityinstance a.dimmed {opacity:0.7;}
