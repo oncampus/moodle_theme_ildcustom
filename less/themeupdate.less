@@ -378,8 +378,14 @@ form.atto_form input[type="url"], select.singleselect {
 // -------------------------------------------------------------
 .pagelayout-report .container {
 	width:98%;
+	#region-main.col-md-9 {
+		width:100%;
+		margin-bottom:20px;
+	}
 }
-
+.path-grade-report-user .user-grade {
+	border-color:#999;
+}
 
 // -------------------------------------------------------------
 // Anpassung Kontakt Datenschutz + Profilseite
@@ -530,3 +536,16 @@ body.editing .course-content ul.collapsibletopics a.sectiontoggle[aria-expanded=
 }
 	
 .activity .activityinstance a.stealth, .activity .activityinstance a.dimmed {opacity:0.7;}
+
+
+// -------------------------------------------------------------
+// Anpassung Plugin Meine Kursliste
+// -------------------------------------------------------------
+.block_custom_course_menu ul.custom_course_menu_category_list li.custom_course_menu_category {
+	padding: 0 0 7px 0;
+}
+.block_custom_course_menu ul.custom_course_menu_category_list ul li.custom_course_menu_course  {
+	margin-left:15px;
+}
+
+
