@@ -78,11 +78,13 @@ echo $OUTPUT->doctype() ?>
 
     <div id="moodle-navbar" class="nav navbar-right"> <?php // navbar-collapse collapse ?>
         <ul class="nav navbar-nav pull-right">
-            <li>
+		    <li>
 		<?php 
 			if (isloggedin()) {
-				global $DB;
+				global $DB, $USER;
 				$unread_messages = $DB->count_records_select('message', "useridto = ?", array($USER->id), "COUNT('id')");
+				//$unread_messages = $DB->count_records('message', array('useridto' => $USER->id));			
+				
 				$style = 'pull-right ild-read-messages';
 				if ($unread_messages > 0) {
 					$style = 'ild-unread-messages';
