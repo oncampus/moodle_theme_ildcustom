@@ -81,10 +81,10 @@ echo $OUTPUT->doctype() ?>
 		    <li>
 		<?php 
 			if (isloggedin()) {
-				global $DB, $USER;
-				$unread_messages = $DB->count_records_select('message', "useridto = ?", array($USER->id), "COUNT('id')");
-				//$unread_messages = $DB->count_records('message', array('useridto' => $USER->id));			
-				
+				global $DB;
+				//$unread_messages = $DB->count_records_select('message', "useridto = ?", array($USER->id), "COUNT('id')");
+				$unread_messages_records = message_get_messages($USER->id, 0, 0, false);;
+				$unread_messages = count($unread_messages_records);
 				$style = 'pull-right ild-read-messages';
 				if ($unread_messages > 0) {
 					$style = 'ild-unread-messages';
