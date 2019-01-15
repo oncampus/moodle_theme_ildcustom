@@ -6,13 +6,6 @@ $jq(document).ready(function() {
 initOcAside(); 
 
 
-
- 
-// fix:
-
-// block-region-side-post ==> display:none;
-
-
 function initOcAside() {
    var b = $jq(window).innerWidth();
    var t = "u";
@@ -31,8 +24,6 @@ function initOcAside() {
 }
 if ($jq(window).innerWidth() <=991) {
   
-  
-  
   // console.log("eingeklappt");
 }
 
@@ -45,7 +36,7 @@ if ($jq(window).innerWidth() <=991) {
  // 767 -> 991px
  // console.log("innerwidth = "+b);
  
- b = 999999;
+   b = 999999;
  
  
  if (b <=974) {
@@ -63,10 +54,6 @@ if ($jq(window).innerWidth() <=991) {
      } else {
        $jq('#block-region-side-post').hide();
      }
-     
-     
-     
-     
  } else {
     $jq('#block-region-side-post').removeClass("magicEffect");
     $jq('#block-region-side-post').show();
@@ -78,33 +65,16 @@ if ($jq(window).innerWidth() <=991) {
         $jq('#block-region-side-post').addClass("magicEffect");
           $jq('#block-region-side-post').show();
           tmp =  $jq('#post-block-toggle').data("originaltop");
-         // console.log("restoring original "+tmp);
+          console.log("restoring original "+tmp);
           
           var abH = $jq('#post-block-toggle').position();
           var abH_y = abH.top;
           abH_y -= 15;
            
           $jq('#block-region-side-post').css({ "top" : abH_y+"px"});
-          
-          
-      
-     } else {
-       
-       if ($jq(window).innerWidth() <= 974) {
-        // console.log("BOOM");
-         if (  $jq('#block-region-side-post').data("boom") == 1) {
-            $jq('#block-region-side-post').css({display: 'none' });
-         }
-         
-       }
-        //console.log("fix");
-        //console.log(   $jq('#block-region-side-post').data("boom") );
-         $jq('#block-region-side-post').data("boom",1);
-         // $jq('#block-region-side-post').css({ 'display' : 'none' });
      }
  }
  });
- 
  
     
   // post-block-toggle' data-toggleflag='1' class='block-toggle pull-right

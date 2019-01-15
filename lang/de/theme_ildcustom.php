@@ -29,7 +29,7 @@ $string['region-side-pre'] = 'Links';
 
 $string['region-fullsize-top'] = 'Fullsize oben';
 $string['region-side-top'] = 'Oben';
-$string['region-content-top'] = 'Oberhalb Content';
+$string['region-content-top'] = '&Uuml;ber Content';
 $string['region-content-bottom'] = 'Unter Content';
 $string['region-side-bottom'] = 'Unten';
 $string['region-side-footer'] = 'Fullsize unten';
@@ -45,8 +45,8 @@ wodurch die gestalterische Individualisierung erleichtert werden soll.';
 
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'Hier kann ein eigenes Logo hochgeladen werden, dass dann im Kopfbereich erscheint.<br>
-Wenn das Logo eine größere Höhe als 75px hat, füge folgende CSS-Regel in das Textfeld mit dem Custom CSS ein:<br>
-a.logo {height: 100px;} bzw. dann mit der entsprechenden Höhe.';
+Wenn das Logo eine gr&ouml;&szlig;ere H&ouml;he als 75px hat, f&uuml;ge folgende CSS-Regel in das Textfeld mit dem Custom CSS ein:<br>
+a.logo {height: 100px;} bzw. dann mit der entsprechenden H&ouml;he.';
 
 $string['choosereadme'] = '
 <div class="clearfix"><div class="theme_screenshot"><h2>ildcustom</h2>
@@ -65,7 +65,7 @@ Dieses Theme wurde entwickelt mit der Unterstützung von:
 Jan Rieger, u.a.
 </p>
 <p>
-Authors: Miriam Kunst Fachhochschule Lübeck<br>
+Authors: Miriam Kunst Fachhochschule L&uuml;beck<br>
 Contact: miriam.kunst@fh-luebeck.de<br>
 Website: <a href="http://www.fh-luebeck.de">www.fh-luebeck.de</a><br>
 </p>';
@@ -73,7 +73,7 @@ Website: <a href="http://www.fh-luebeck.de">www.fh-luebeck.de</a><br>
 $string['footnote'] = 'Footerbereich';
 $string['footnote_description'] = 'Hier kann der Footerbereich individuell gestaltet werden.';
 $string['footnote_html'] = 'Footerinhalt';
-$string['footnote_html_description'] = 'Hier kann der Inhalt für den Footerbereich als Text oder als HTML eingegeben werden.';
+$string['footnote_html_description'] = 'Hier kann der Inhalt f&uuml;r den Footerbereich als Text oder als HTML eingegeben werden.';
 $string['social_media_urls'] = 'Social Media';
 $string['social_media_urls_description'] = 'Im Footerbereich der Seite können die Logos mit Links zu den verschiedenen Socialmedia-Platformen angezeigt werden.';
 $string['facebook_url'] = 'Facebook';
@@ -96,10 +96,10 @@ $string['brand_html_description'] = 'Hier kann man in der Navbar anstelle des Lo
 <pre>&lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;<br>&lt;span style=&quot;font-size:16px; padding-left:7px;&quot;&gt;Startseite&lt;/span&gt; </pre>';
 $string['brandwidth'] = 'Logobreite';
 $string['brandwidth_description'] = 'Set the width of the brand. Die Standardbreite für das Logo ist 138px und kann maximal 250px betragen.';
-$string['navheight'] = 'Navbar Höhe';
-$string['navheight_description'] = 'Set the height of the navbar. Die Standardhöhe für die Navbar ist 52px.';
-$string['bannerheight'] = 'Bannerhöhe';
-$string['bannerheight_description'] = 'Set the height of the banner. Die Standardhöhe für das Headerbanner ist 170px.';
+$string['navheight'] = 'Navbar H&ouml;he';
+$string['navheight_description'] = 'Set the height of the navbar. Die Standardh&ouml;he für die Navbar ist 52px.';
+$string['bannerheight'] = 'Bannerh&ouml;he';
+$string['bannerheight_description'] = 'Set the height of the banner. Die Standardh&ouml;he für das Headerbanner ist 170px.';
 
 
 $string['graphicbanner'] = 'Grafikbanner-Einstellungen';
@@ -170,8 +170,8 @@ $string['bannerbgsize'] = 'Banner background size';
 $string['bannerbgsize_desc'] = 'The size of the background image.';
 $string['bannerbgsizecover'] = 'Ausfüllend'; // cover - area is completely covered
 $string['bannerbgsizecontain'] = 'Eingepasst'; // contain - fit inside the area
-$string['bannerbgsizeauto'] = 'Auto-Bildgröße';
-$string['bannerbgsizeheight'] = '100% Höhe';
+$string['bannerbgsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
+$string['bannerbgsizeheight'] = '100% H&ouml;he';
 $string['bannerbgsizewidth'] = '100% Breite';
 
 $string['bannerlayerimage'] = 'Banner layer image';
@@ -199,8 +199,8 @@ $string['bannerlayersize'] = 'Background layer image size';
 $string['bannerlayersize_desc'] = 'The size of the background foreground image.';
 $string['bannerlayersizecover'] = 'Ausfüllend'; // cover - area is completely covered
 $string['bannerlayersizecontain'] = 'Eingepasst'; // contain - fit inside the area
-$string['bannerlayersizeauto'] = 'Auto-Bildgröße';
-$string['bannerlayersizeheight'] = '100% Höhe';
+$string['bannerlayersizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
+$string['bannerlayersizeheight'] = '100% H&ouml;he';
 $string['bannerlayersizewidth'] = '100% Breite';
 
 
@@ -233,8 +233,8 @@ $string['bannercontentsize'] = 'Banner content image size';
 $string['bannercontentsize_desc'] = 'The size of the background content image.';
 $string['bannercontentsizecover'] = 'Ausfüllend'; // cover - area is completely covered
 $string['bannercontentsizecontain'] = 'Eingepasst'; // contain - fit inside the area
-$string['bannercontentsizeauto'] = 'Auto-Bildgröße';
-$string['bannercontentsizeheight'] = '100% Höhe';
+$string['bannercontentsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
+$string['bannercontentsizeheight'] = '100% H&ouml;he';
 $string['bannercontentsizewidth'] = '100% Breite';
 
 $string['bannercontentfix'] = 'Banner content fix imagesize';
@@ -248,12 +248,12 @@ $string['loginbgcolor_desc'] = 'Hier kann eine Hintergrundfarbe für den Loginbe
 $string['loginbgimage'] = 'Login Grafik';
 $string['loginbgimage_desc'] = 'Hintergrundgrafik für den Loginbereich.';
 
-$string['loginbgsize'] = 'Logingrafik Größe';
+$string['loginbgsize'] = 'Logingrafik Gr&ouml;ße';
 $string['loginbgsize_desc'] = 'Das Größenverhältnis der Hitnergrundgrafik im Loginbereich wird festgelegt.';
 $string['loginbgsizecover'] = 'Ausfüllend'; // cover - area is completely covered
 $string['loginbgsizecontain'] = 'Eingepasst'; // contain - fit inside the area
-$string['loginbgsizeauto'] = 'Auto-Bildgröße';
-$string['loginbgsizeheight'] = '100% Höhe';
+$string['loginbgsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
+$string['loginbgsizeheight'] = '100% H&ouml;he';
 $string['loginbgsizewidth'] = '100% Breite';
 
 $string['loginbgrepeat'] = 'Loginimage repeat';
@@ -288,6 +288,3 @@ $string['customfavsettings_description'] = 'Upload for custom favicon.';
 $string['favicon'] = 'Favicon';
 $string['favicon_desc'] = 'Change the ICO-File for the favicon.';
 
-$string['in-progress-courses-title'] = 'Laufende Kurse';
-$string['future-courses-title'] = 'Zukünftige Kurse';
-$string['past-courses-title'] = 'Vergangene Kurse';
