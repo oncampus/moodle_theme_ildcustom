@@ -82,7 +82,9 @@ echo $OUTPUT->doctype() ?>
 		<?php 
 			if (isloggedin()) {
 				global $DB;
-				$unread_messages = $DB->count_records_select('message', "useridto = ?", array($USER->id), "COUNT('id')");
+				// $unread_messages = $DB->count_records_select('message', "useridto = ?", array($USER->id), "COUNT('id')");
+				$unread_messages_records = message_get_messages($USER->id, 0, 0, false);;
+				$unread_messages = count($unread_messages_records);
 				$style = 'pull-right ild-read-messages';
 				if ($unread_messages > 0) {
 					$style = 'ild-unread-messages';
@@ -153,15 +155,21 @@ if ($knownregionpost) {
 		
         <section id="region-main" class="<?php echo $regions['content']; ?>">
 		  <div id="region-main-inner">
+		  
 		    <?php
             echo $OUTPUT->course_content_header();
             echo $OUTPUT->main_content();
-            echo $OUTPUT->course_content_footer();
+            echo $OUTPUT->course_content_footer(); ?>
+			<?php echo $OUTPUT->standard_after_main_region_html() ?>
+			<?php
 			if ($knownregioncontentbottom) {
 				echo $OUTPUT->blocks('content-bottom', $regions['content-bottom']);
 			}
-            ?>		
+            ?>			
 		  </div>
+		  
+		  <?php echo $OUTPUT->standard_after_main_region_html() ?>
+
 		</section>
         <?php
         if ($knownregionpre) {
@@ -176,12 +184,14 @@ if ($knownregionpost) {
         if ($knownregionbottom) {
             echo $OUTPUT->blocks('side-bottom', 'col-md-12 col-sm-12 col-xs-12');
     } ?>
+	
 </div>
 	<?php 
         if ($knownregionfooter) {
             echo $OUTPUT->blocks('side-footer', $regions['side-footer']);
     } ?>
 </div>
+
 <footer id="page-footer">
 	<div id="page-footer-container" class="container">
 	  <div id="page-footer-content" class="row">

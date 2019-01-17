@@ -222,3 +222,71 @@ form.atto_form input[type="url"], select.singleselect {
 .path-mod-data .tableself a {
    word-wrap:break-word; word-break:break-all;
 }
+/* ----------------------------------------------------------- */
+/*           Korrekturen moodle 3.5 update                     */
+/* ----------------------------------------------------------- */ 
+
+.list-group-item .dropdown .btn-link.coursemenubtn {
+	border-radius:50%;
+	border:0px;
+	&:hover {
+		background-color:#e9ecef;
+	}
+}
+
+// Anpassungen Mitteilungen
+// -------------------------------------------------------------
+#page-message-index #region-main-inner{
+	padding-bottom:25px;
+}
+#view-overview-messages-target .list-group-item {
+	border-radius:0px;
+}
+#view-overview-messages-target .list-group-item
+.px-2.py-1.position-right {right:10px;}
+
+#region-main .message-drawer {
+	.drawer-top.border-bottom {
+		display:none;
+	}
+	&.bg-light {
+		background-color:#fff !important;
+	}
+	.header-container .input-prepend input[type="text"] {
+		border-radius:0px;
+		box-shadow: inset 1px 1px 1px rgba(0,0,0,.075);
+		-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.075);
+		-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.075);
+	}
+	
+	.overview-section-toggle {
+		margin-left:0px;
+	}
+	.btn-link {
+		border-color: transparent;
+	}
+	.dropdown .btn-link { border-radius:50%;}
+	.accordion-heading {border-bottom: 1px solid rgba(0,0,0,.125);}
+	.border-bottom {
+		border-bottom: 1px solid #dee2e6 !important;
+	}	
+}
+#region-main .message-drawer .btn-link:hover, .message-drawer .btn-link:focus {
+    background-color: rgba(0,0,0,.035);
+    text-decoration: none;
+}
+.message-drawer .content-message-container {
+	background-color:#f8f9fa !important;
+}
+.message-drawer .accordion-group .collapsed-icon-container {
+    display: inline-block;
+}
+.message-drawer .accordion-group.expanded .collapsed-icon-container {
+    display: none;
+}
+.message-drawer .accordion-group .expanded-icon-container {
+    display: none;
+}
+.message-drawer .accordion-group.expanded .expanded-icon-container {
+    display: inline-block;
+}
