@@ -242,15 +242,65 @@ form.atto_form input[type="url"], select.singleselect {
    word-wrap:break-word; word-break:break-all;
 }
 /* ----------------------------------------------------------- */
-/*           Korrekturen moodle 3.5 update                     */
+/*           Korrekturen moodle 3.6 update                     */
 /* ----------------------------------------------------------- */ 
-
-.list-group-item .dropdown .btn-link.coursemenubtn {
-	border-radius:50%;
-	border:0px;
-	&:hover {
-		background-color:#e9ecef;
+.dashboard-card, .list-group-item, .course-summaryitem {
+	.dropdown .btn-link.coursemenubtn {
+		border-radius:50%;
+		border:0px;
+		padding:0px;
+		&:hover {
+			background-color:#e9ecef;
+		}
+		img {margin:0px auto;}
 	}
+}
+.course-summaryitem .summaryimage {
+	border-radius:0px;
+}
+/* -- Dashbord Kurskachelansicht (responsive Kacheln) -- */
+.dashboard-card-deck {
+    box-sizing: border-box;
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -.25rem;
+    margin-left: -.25rem;
+
+    .dashboard-card {
+        margin-bottom: 0.5rem;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        min-width: 0;
+        width: ~"calc(100% - 0.5rem)";
+        flex-basis: auto;
+    }
+    @media (min-width: 320px) {
+        .dashboard-card {
+            width: ~"calc(100% - 0.5rem)";
+        }
+    }
+    @media (min-width: 480px) {
+        .dashboard-card {
+            width: ~"calc(50% - 0.5rem)";
+        }
+    }
+    @media (min-width: 1163px) {
+        .dashboard-card {
+            width: ~"calc(33.333% - 0.5rem)";
+        }
+    }
+    @media (min-width: 1514px) {
+        .dashboard-card {
+            width: ~"calc(25% - 0.5rem)";
+        }
+    }
 }
 
 // Anpassungen Mitteilungen
