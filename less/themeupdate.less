@@ -59,17 +59,36 @@ form.atto_form input[type="url"], select.singleselect {
 
 // Kursuebersicht korrektur
 // -------------------------------------------------------------
-
-.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-}
 .nav-pills > li > a {border-radius:0px;}
 .card {margin-left:15px; margin-right:15px; border-radius:0px;}
 
 
 .fade.show {
     opacity: 1;
+}
+
+// Anpassung Forum
+// ------------------------------------
+
+// Abstand zwischen den Foren Einträgen
+.forumpost {
+	margin-bottom:5px; 
+	padding-top:12px;
+	border-top:1px solid #ddd; 
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+.forumpost .options .commands.nav {margin-bottom:5px;}
+
+// Kommentar Links
+.nav-link {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+}
+// Abonieren Icon
+.path-mod-forum .discussionsubscription a.discussiontoggle img {
+	width:22px;
 }
 
 
