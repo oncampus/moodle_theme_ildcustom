@@ -244,6 +244,26 @@ form.atto_form input[type="url"], select.singleselect {
 .path-mod-data .tableself a {
    word-wrap:break-word; word-break:break-all;
 }
+// -------------------------------------------------------------
+// Anpassung Reportseiten, Bewertungsseiten, Adminseiten
+// -------------------------------------------------------------
+.path-report #region-main {
+    width: 100%;
+    margin-bottom: 30px;
+}
+// Bewertung Bericht
+.path-grade-report #region-main {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.path-admin-tool #region-main {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.path-grade-report-user .user-grade {
+	border-color:#bfbfbf;
+}
+
 /* ----------------------------------------------------------- */
 /*           Korrekturen moodle 3.6 update                     */
 /* ----------------------------------------------------------- */ 
@@ -261,6 +281,12 @@ form.atto_form input[type="url"], select.singleselect {
 .course-summaryitem .summaryimage {
 	border-radius:0px;
 }
+
+// Aktivitätsabschluss setzen btn
+.togglecompletion .btn.btn-link {
+	border:0px;
+}
+
 /* -- Dashbord Kurskachelansicht (responsive Kacheln) -- */
 .dashboard-card-deck {
     box-sizing: border-box;
@@ -304,6 +330,27 @@ form.atto_form input[type="url"], select.singleselect {
             width: ~"calc(25% - 0.5rem)";
         }
     }
+}
+
+.well, .card {
+	border-radius:0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	hr {
+		border-color:#ddd;
+	}
+}
+.block_myoverview .pagination .page-item .page-link img.icon {
+	height:8px;
+	width:8px;
+	margin-left:6px;
+	margin-right:6px;
+	vertical-align:middle;
+	opacity:0.6;
+}
+.block_myoverview .pagination .page-item.disabled .page-link img.icon {
+	opacity:0.3;
 }
 
 // Anpassungen Mitteilungen
@@ -361,4 +408,19 @@ form.atto_form input[type="url"], select.singleselect {
 }
 .message-drawer .accordion-group.expanded .expanded-icon-container {
     display: inline-block;
+}
+
+// Anpassung enrol-Icons Kursbereiche 
+.coursebox .enrolmenticons img {padding:0px;}
+
+// Anpassung Kalendar
+.calendar_filters a:hover {
+	text-decoration:none;
+}
+.calendar_filters a:hover .eventname {
+	text-decoration:underline;
+}
+.block .calendar_filters li span img.icon {
+	margin:0px;
+	padding:0 0 0.2em;
 }
