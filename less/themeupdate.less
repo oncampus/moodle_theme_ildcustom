@@ -414,6 +414,7 @@ form.atto_form input[type="url"], select.singleselect {
 .coursebox .enrolmenticons img {padding:0px;}
 
 // Anpassung Kalendar
+// -------------------------------------------------------------
 .calendar_filters a:hover {
 	text-decoration:none;
 }
@@ -424,3 +425,50 @@ form.atto_form input[type="url"], select.singleselect {
 	margin:0px;
 	padding:0 0 0.2em;
 }
+.calendar-controls a.arrow_link:hover {
+	text-decoration:none;
+}
+.calendar-controls a.arrow_link:hover .arrow_text {
+	text-decoration:underline;
+}
+.path-calendar .maincalendar .eventlist .event {
+	border-radius:0px;
+}
+
+//   Anpassungen block Minikalender 
+// -------------------------------------------------------------
+.popover.bs-popover-top {
+    border-radius: 0px;	
+	margin-top:-11px;
+	h3.popover-header {
+		padding: 8px 14px;
+		font-size: 13px;
+		background-color: #f7f7f7;
+		border-bottom: 1px solid #ebebeb;
+		margin:0px;
+	}
+	.popover-body {
+		padding: 9px 14px;
+		font-size: 12px;
+	}
+}
+
+//   Anpassungen block timeline und aktuelle Termine
+// -------------------------------------------------------------
+.block_timeline .block-timeline ul.list-group {
+	margin:0px;
+	.list-group-item:first-child {
+		border-radius:0px;
+	}
+	.list-group-item {
+		margin-top:7px !important;
+		padding:2px 10px 5px 10px !important;
+	}
+}
+.block_timeline .block-timeline ul.media-list {
+	margin:0px;
+}
+.block_calendar_upcoming .content.card-text {
+	padding: 0px;
+}
+
