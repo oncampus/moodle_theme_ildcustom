@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2018080800;
-$plugin->requires  = 2015051100;
+$plugin->version   = 2019021200;
+$plugin->requires  = 2016051500;
 $plugin->maturity  = MATURITY_BETA;
 $plugin->release = '1.0';
 $plugin->component = 'theme_ildcustom';
 $plugin->dependencies = array(
-    'theme_bootstrap'  => 2014051300
+    'theme_bootstrap'  => 2019021200
 );
