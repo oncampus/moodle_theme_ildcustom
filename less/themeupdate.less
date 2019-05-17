@@ -487,3 +487,47 @@ form.atto_form input[type="url"], select.singleselect {
 	-moz-border-radius:0px !important;
 	border-radius:0px !important;
 }
+
+//   Anpassungen Grid Kursformat
+// --------------------------------------
+#page-course-view-grid #region-main-inner div[role="main"] {
+    overflow-x: unset;
+    background-color: #fff;
+}
+#page-course-view-grid #region-main-inner {padding:25px;}
+#page-course-view-grid #gridiconcontainer {margin:30px auto;}
+#page-course-view-grid.editing .course-content ul.gtopics li.section .side {width:auto;}
+
+#page-course-view-grid {
+	.course-content ul.gridicons li .image_holder {border-width:1px; border-radius:0px; margin-top:5px;}
+	
+	#gridshadebox_content.absolute {
+		width:75%; 
+		max-width:1200px; 
+		margin:0px auto; 
+		border:0px; 
+		left:30px; 
+		right:30px; 
+		padding:15px;
+		@media (max-width:480px){padding:5px;}
+	}
+}
+
+@media (min-width:1200px){ 
+	.gridshadebox_arrow {width:45px; height:45px;} 
+	.gridshadebox_previous_area {left: -55px;}
+	.gridshadebox_next_area {right: -65px;}
+}
+@media (min-width:767px) and (max-width:1199px){
+	.gridshadebox_previous_area {left: -50px;}
+	.gridshadebox_next_area {right: -50px;}
+}
+@media (min-width:481px) and (max-width:767px){
+	.gridshadebox_previous_area {left: -40px;}
+	.gridshadebox_next_area {right: -40px;}
+}
+@media (max-width:480px){
+	.gridshadebox_previous_area {left: -30px;}
+	.gridshadebox_next_area {right: -30px;}
+}
+
