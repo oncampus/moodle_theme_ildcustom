@@ -75,7 +75,7 @@ $string['footnote_description'] = 'Hier kann der Footerbereich individuell gesta
 $string['footnote_html'] = 'Footerinhalt';
 $string['footnote_html_description'] = 'Hier kann der Inhalt f&uuml;r den Footerbereich als Text oder als HTML eingegeben werden.';
 $string['social_media_urls'] = 'Social Media';
-$string['social_media_urls_description'] = 'Im Footerbereich der Seite können die Logos mit Links zu den verschiedenen Socialmedia-Platformen angezeigt werden.';
+$string['social_media_urls_description'] = 'Im Footerbereich der Seite k&ouml;nnen die Logos mit Links zu den verschiedenen Socialmedia-Platformen angezeigt werden.';
 $string['facebook_url'] = 'Facebook';
 $string['facebook_url_description'] = 'Link zur eigenene Facebook-Seite';
 $string['googleplus_url'] = 'Google+';
@@ -95,17 +95,17 @@ $string['brand_html'] = 'Brand (Logobereich)';
 $string['brand_html_description'] = 'Hier kann man in der Navbar anstelle des Logos Text oder HTML eingeben. Zum Beispiel einen Startseite-Button: <br>
 <pre>&lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;<br>&lt;span style=&quot;font-size:16px; padding-left:7px;&quot;&gt;Startseite&lt;/span&gt; </pre>';
 $string['brandwidth'] = 'Logobreite';
-$string['brandwidth_description'] = 'Set the width of the brand. Die Standardbreite für das Logo ist 138px und kann maximal 250px betragen.';
+$string['brandwidth_description'] = 'Set the width of the brand. Die Standardbreite f&uuml;r das Logo ist 138px und kann maximal 250px betragen.';
 $string['navheight'] = 'Navbar H&ouml;he';
-$string['navheight_description'] = 'Set the height of the navbar. Die Standardh&ouml;he für die Navbar ist 52px.';
+$string['navheight_description'] = 'Set the height of the navbar. Die Standardh&ouml;he f&uuml;r die Navbar ist 52px.';
 $string['bannerheight'] = 'Bannerh&ouml;he';
-$string['bannerheight_description'] = 'Set the height of the banner. Die Standardh&ouml;he für das Headerbanner ist 170px.';
+$string['bannerheight_description'] = 'Set the height of the banner. Die Standardh&ouml;he f&uuml;r das Headerbanner ist 170px.';
 
 
 $string['graphicbanner'] = 'Grafikbanner-Einstellungen';
 $string['graphicbanner_description'] = 'Hier wird das Grafikbanner konfiguriert.';
-$string['graphicbanner_text'] = 'Überschrift';
-$string['graphicbanner_text_description'] = 'Dieser Text wird über dem Grafikbanner eingeblendet';
+$string['graphicbanner_text'] = '&Uuml;berschrift';
+$string['graphicbanner_text_description'] = 'Dieser Text wird &uuml;ber dem Grafikbanner eingeblendet';
 
 $string['themecolor'] = 'Theme color';
 $string['themecolor_description'] = 'Set the color for the theme. This is an accent color for the block decoration and the social footer background';
@@ -128,7 +128,7 @@ $string['footercolor_description'] = 'Set the color of the footer background (fo
 
 
 $string['generalcolorsettings'] = 'Allgemeine Farbeinstellungen';
-$string['generalcolorsettings_description'] = 'Konfiguration der allgemeinen Farben für das Theme.';
+$string['generalcolorsettings_description'] = 'Konfiguration der allgemeinen Farben f&uuml;r das Theme.';
 
 
 $string['navbarbrandsettings'] = 'Logo Home-Button Einstellungen';
@@ -168,7 +168,7 @@ $string['bannerbgrepeatrepeaty'] = 'Repeat vertically';
 
 $string['bannerbgsize'] = 'Banner background size';
 $string['bannerbgsize_desc'] = 'The size of the background image.';
-$string['bannerbgsizecover'] = 'Ausfüllend'; // cover - area is completely covered
+$string['bannerbgsizecover'] = 'Ausf&uuml;llend'; // cover - area is completely covered
 $string['bannerbgsizecontain'] = 'Eingepasst'; // contain - fit inside the area
 $string['bannerbgsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
 $string['bannerbgsizeheight'] = '100% H&ouml;he';
@@ -197,7 +197,7 @@ $string['bannerlayerrepeatrepeaty'] = 'Repeat vertically';
 
 $string['bannerlayersize'] = 'Background layer image size';
 $string['bannerlayersize_desc'] = 'The size of the background foreground image.';
-$string['bannerlayersizecover'] = 'Ausfüllend'; // cover - area is completely covered
+$string['bannerlayersizecover'] = 'Ausf&uuml;llend'; // cover - area is completely covered
 $string['bannerlayersizecontain'] = 'Eingepasst'; // contain - fit inside the area
 $string['bannerlayersizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
 $string['bannerlayersizeheight'] = '100% H&ouml;he';
@@ -231,7 +231,7 @@ $string['bannercontentrepeatrepeaty'] = 'Repeat vertically';
 
 $string['bannercontentsize'] = 'Banner content image size';
 $string['bannercontentsize_desc'] = 'The size of the background content image.';
-$string['bannercontentsizecover'] = 'Ausfüllend'; // cover - area is completely covered
+$string['bannercontentsizecover'] = 'Ausf&uuml;llend'; // cover - area is completely covered
 $string['bannercontentsizecontain'] = 'Eingepasst'; // contain - fit inside the area
 $string['bannercontentsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
 $string['bannercontentsizeheight'] = '100% H&ouml;he';
@@ -243,14 +243,14 @@ $string['bannercontentfix_description'] = 'Individual imagesize for image inside
 $string['loginsite'] = 'Loginbereich';
 $string['loginsite_description'] = 'Hier kann der Loginbereich individuell gestaltet werden.';
 $string['loginbgcolor'] = 'Login Hintergrundfarbe';
-$string['loginbgcolor_desc'] = 'Hier kann eine Hintergrundfarbe für den Loginbereich festgelegt werden.';
+$string['loginbgcolor_desc'] = 'Hier kann eine Hintergrundfarbe f&uuml;r den Loginbereich festgelegt werden.';
 
 $string['loginbgimage'] = 'Login Grafik';
-$string['loginbgimage_desc'] = 'Hintergrundgrafik für den Loginbereich.';
+$string['loginbgimage_desc'] = 'Hintergrundgrafik f&uuml;r den Loginbereich.';
 
-$string['loginbgsize'] = 'Logingrafik Gr&ouml;ße';
-$string['loginbgsize_desc'] = 'Das Größenverhältnis der Hitnergrundgrafik im Loginbereich wird festgelegt.';
-$string['loginbgsizecover'] = 'Ausfüllend'; // cover - area is completely covered
+$string['loginbgsize'] = 'Logingrafik Gr&ouml;&szlig;e';
+$string['loginbgsize_desc'] = 'Das Gr&ouml;&szlig;enverh&auml;ltnis der Hitnergrundgrafik im Loginbereich wird festgelegt.';
+$string['loginbgsizecover'] = 'Ausf&uuml;llend'; // cover - area is completely covered
 $string['loginbgsizecontain'] = 'Eingepasst'; // contain - fit inside the area
 $string['loginbgsizeauto'] = 'Auto-Bildgr&ouml;&szlig;e';
 $string['loginbgsizeheight'] = '100% H&ouml;he';
